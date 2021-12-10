@@ -179,44 +179,4 @@ y =  max(W*x+b,0);
 end % of nested function
 
 
-
-%% Task 1:   
-%  derive expressions of backpropagation and sgd for a network of L layers
-%  with one neuron per layer. 
-
-
-
-%% Task 2:    
-%  Modify the script netbpsgd.m and report your results as follows: 
-%  Add 
-%  rng('default')
-%  To the beginning of you code for every task!
-%
-%  (1) Add additional hidden layers and neurons to the existing network. 
-%      Specifically,  netbpsgd is a ``2-2-3-2'' network, change it to 
-%      a ``2-5-5-5-2'' network. Using a learning rate of 0.05 and 3e5 number
-%      of sgd iterations to show the convergence behavior of the cost function
-%      and the classification with the training data set in netbpsgd. 
-
-
-%  (2) Replace the sigmoid activation function of netpbsgd to ReLU 
-%      activation function activitation. Using a learning rate of 0.0025 and 
-%      3e5 number of sgd iterations to show the convergence behavior of 
-%      the cost function and the classification with the training data set 
-%      in netbpsgd. 
-%
-% 
-%  (3) Combine the tasks 2(1) and 2(2) to a network of five layers 
-%      (``2-5-5-5-2'') and ReLU activation function, with the 
-%      learning rate 0.0025 and 3e5 number of iterations. Show the 
-%      convergence behavior of the cost function and the classification 
-%      with the following training data set: 
-%
-%  m = 12;
-%  n = 8;
-%  x1 = [0.1,0.05,0.05,0.1,0.35,0.65,0.9,0.95,0.95,0.9,0.65,0.35,0.7,0.3,0.3,0.7,0.25,0.75,0.5,0.5];
-%  x2 = [0.1,0.65,0.35,0.9,0.95,0.95,0.9,0.65,0.35,0.1,0.05,0.05,0.7,0.7,0.3,0.3,0.5,0.5,0.75,0.25];
-%  y = [ones(1,m) zeros(1,n); zeros(1,m) ones(1,n)];
-%  y = [ones(1,m) zeros(1,n); zeros(1,m) ones(1,n)];
-%
 end
